@@ -4,6 +4,8 @@ metadata:
   labels:
     kubernetes.io/metadata.name: openshift-cert-manager-operator
   name: openshift-cert-manager-operator
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
 spec:
   finalizers:
   - kubernetes
